@@ -32,7 +32,6 @@ MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) =
 });
 
 app.post("/", function (req, res){
-  console.log(collection)
   collection.insertOne(req.body, (err, result) => {
     if (err) return console.log(err);
 
