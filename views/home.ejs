@@ -1,8 +1,21 @@
 <html>
   <head>
-    <title>Portfolio App</title>
+    <%- include('partials/header'); %>
   </head>
   <body>
+    <h1> Import guide! </h1>
+    <form action="/" method="post">
+      <label for="firstname">First name:</label><br>
+      <input type="text" id="firstname" name="firstname"><br>
+      <label for="lastname">Last name:</label><br>
+      <input type="text" id="lastname" name="lastname"><br>
+      <label for="email">Email:</label><br>
+      <input name="email" type="email" id="email"><br><br>
+      <input type="submit" value="Submit">
+    </form>
     <p>This is a test page!</p>
   </body>
+  <footer>
+    <%- include('partials/footer'); %>
+  </footer>  
 </html>
