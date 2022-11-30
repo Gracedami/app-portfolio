@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 
 const MongoClient = require('mongodb').MongoClient;
 
-const CONNECTION_URL = "mongodb+srv://rytan:L3lessings@cluster555.5bq1dpk.mongodb.net/test";
+const CONNECTION_URL = "mongodb+srv://rytan:456789123@cluster555.5bq1dpk.mongodb.net/test";
 const DATABASE_NAME = "newdb"; // you can change the database name
 var database, collection;
 
