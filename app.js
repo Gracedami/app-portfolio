@@ -7,7 +7,7 @@ var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 app.use(cookieParser());
 
 app.get("/", function(req, res){
-  res.render('home');
+  res.render('adminInstall');
 });
 
 app.use(express.urlencoded({extended: true}));
@@ -43,7 +43,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 // Supports a list of scopes as a string delimited by ',' or ' ' or '%20'
 const SCOPES = (process.env.SCOPE.split(/ |, ?|%20/) || ['crm.objects.contacts.write']).join(' ');
 
-const REDIRECT_URI = `http://localhost:3000/oauth-callback`;
+const REDIRECT_URI = `https://lime-naughty-armadillo.cyclic.app/`;
 const refreshTokenStore = {};
 const accessTokenCache = new NodeCache({ deleteOnExpire: true });
 
